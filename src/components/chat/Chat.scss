@@ -1,0 +1,33 @@
+$primary: #2f1793;
+.chat {
+  display: flex;
+  justify-content: space-between;
+  .chat__container {
+    width: 20%;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    h1 {
+      text-align: center;
+    }
+    form {
+      display: flex;
+      justify-content: center;
+      input {
+        flex: 1;
+        margin: 0px 10px;
+        outline: none;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 0px 10px;
+      }
+      .send__message {
+        background-color: $primary !important;
+        color: white !important;
+        text-transform: capitalize !important;
+        padding: 5px 10px !important;
+        margin: 0px 10px !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+$primary: #2f1793;
+$secondary: #24dac6;
+.login {
+  display: flex;
+  justify-content: center;
+  form {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    .error {
+      color: red;
+      font-size: 13px;
+    }
+    h1 {
+      font-size: 24px;
+      padding: 10px;
+    }
+    input {
+      padding: 10px 0px;
+      outline: none;
+      border: 1px solid rgb(117, 32, 32);
+      margin: 10px;
+      border-radius: 5px;
+      text-align: center;
+      width: 60%;
+    }
+    .btn__login {
+      text-transform: capitalize !important;
+      padding: 5px 10px !important;
+      background: $primary !important;
+      color: white !important;
+      width: 60% !important;
+      margin-top: 20px;
+    }
+    @media screen and (max-width: 768px) {
+      width: 50%;
+    }
+  }
+}

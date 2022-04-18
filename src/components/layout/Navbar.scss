@@ -1,0 +1,74 @@
+$primary: #2f1793;
+$secondary: #24dac6;
+nav {
+  background: $primary;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+  .nav__link {
+    text-decoration: none !important;
+  }
+  .nav__title {
+    display: flex;
+    align-items: center;
+    h2 {
+      color: white;
+      font-weight: 600;
+      padding: 0.8rem;
+    }
+  }
+  .menu__icon {
+    display: none;
+    color: white !important;
+    margin-left: 5px !important;
+    cursor: pointer;
+  }
+  .nav__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+    .nav__link {
+      text-decoration: none !important;
+      color: rgb(224, 224, 224) !important;
+      padding: 0.8rem 1rem;
+      p {
+        text-transform: capitalize !important;
+        padding-bottom: 5px;
+      }
+      &:hover {
+        background: rgba(0, 0, 0, 0.25);
+      }
+    }
+    .active p {
+      font-weight: 600 !important;
+      border-bottom: 2px solid white;
+    }
+  }
+  .nav__btn {
+    display: flex;
+    align-items: center;
+    .btn {
+      background-color: $primary !important;
+      color: white;
+      text-transform: capitalize !important;
+      padding: 5px 10px !important;
+      margin: 0px 5px !important;
+    }
+    .btn__login,
+    .btn__logout {
+      border: 1px solid white !important;
+    }
+    .btn__signup {
+      background-color: $secondary !important;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .menu__icon {
+      display: block;
+    }
+  }
+}
